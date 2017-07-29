@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.firebase.quickstart.database">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_explicit_black_24dp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ecbclass.user_activity.Home"
+            android:label="ECB Class"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ecbclass.database.MainActivity"
+            android:label="ECB Class Posts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ecbclass.user_activity.Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ecbclass.user_activity.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ecbclass.database.PostDetailActivity" />
+
+        <activity android:name="com.ecbclass.database.NewPostActivity" />
+
+        <activity
+            android:name="com.ecbclass.user_activity.PhoneAuthActivity"
+            android:label="Phone Number verification"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" />
+        <activity
+            android:name="com.ecbclass.database.Branch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ecbclass.database.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.ecbclass.database.PostBySubject" />
+
+        <receiver
+            android:name="com.ecbclass.InternetConnector_Receiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Intent filters for broadcast receiver -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

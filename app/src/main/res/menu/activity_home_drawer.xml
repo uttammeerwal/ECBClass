@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/post_by_subject"
+            android:icon="@drawable/ic_create_black_24dp"
+            android:title="Posts By Subjects" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <group
+        android:id="@+id/logout_grp"
+        android:checkableBehavior="none"
+        android:visible="false">
+        <item
+            android:id="@+id/sign_out_drawer"
+            android:icon="@drawable/logout"
+            android:title="LogOut" />
+    </group>
+</menu>

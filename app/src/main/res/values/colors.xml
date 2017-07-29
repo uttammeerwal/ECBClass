@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#B6B6B6</color>
+    <!--color tag for button branch.class-->
+    <color name="button_pressed">#039BE5</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#FF4081</color>
+    <color name="custom_snackbar_background_color">#FF00A7A5</color>
+    <color name="custom_snackbar_background_color1">#FF6EC071</color>
+    <color name="custom_snackbar_background_color2">#FF2195F3</color>
+    <color name="pure_red">#FF0000</color>
+</resources>

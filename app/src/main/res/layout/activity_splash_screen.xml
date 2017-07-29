@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:background="@drawable/splash_background">
+
+    <ProgressBar
+        android:id="@+id/splashProgress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/splash_custom_progress_bar"></ProgressBar>
+
+    <TextView
+        android:id="@+id/ecbclasstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashProgress"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif-monospace"
+        android:text="ECB Class"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/designbyuttamsingh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ecbclasstext"
+        android:layout_below="@+id/ecbclasstext"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif-monospace"
+        android:text="By:Uttam Singh"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
